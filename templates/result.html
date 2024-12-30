@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis Results</title>
+</head>
+<body>
+    <h1>Phishing Email Analysis Results</h1>
+    <p><strong>Sender Email:</strong> {{ sender_email }}</p>
+    <p><strong>Email Body:</strong></p>
+    <pre>{{ email_body }}</pre>
+
+    <h2>Results:</h2>
+    <p><strong>Phishing Content Detected:</strong> {{ 'Yes' if phishing_content else 'No' }}</p>
+    <p><strong>Valid Sender Domain:</strong> {{ 'Yes' if valid_sender_domain else 'No' }}</p>
+    <p><strong>Suspicious URLs Detected:</strong> {{ 'Yes' if suspicious_urls else 'No' }}</p>
+    <p><strong>Is Phishing Email:</strong> {{ 'Yes' if result else 'No' }}</p>
+</body>
+</html>
